@@ -23,7 +23,7 @@
 	   requisitos = new ArrayList();
 %>
 
-<form action="http://localhost:8080/SGV/Controle" class="formee" method="get">
+<form action="http://localhost:8080/SGV/Controle" class="formee" method="post">
 	<fieldset id="dados">
 		<legend>Novo</legend>
 			<div class="grid-1-12">

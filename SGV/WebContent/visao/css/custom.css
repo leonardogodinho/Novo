@@ -7,8 +7,6 @@ label, input { font-family: Arial, Helvetica, sans-serif; }
 
 h2 { font-weight: normal; }
 
-#passw { margin: 22px 50%; }
-
 .opt-menu a { color: #FFAA00 !important; }
 
 .opt-menu a:hover { color: #897171 !important; }
@@ -19,8 +17,11 @@ header .logo {
 	position: relative;
 	botton: 58px;
 }
-
-section#login { margin-top: 150px; }
+#passw { margin: 22px 50%; }
+section#login { 
+	margin: 150px;
+}
+#login { margin: 0 50%; }
 
 /*Menu*/
 nav ul,
@@ -218,9 +219,9 @@ nav .has-sub .has-sub ul li a:hover {
 
 .formee legend {font-family: spin_cycle_3d_otregular;}
 
-.formee .formee-txt, .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee input[type="number"], .formee input[type="date"], .formee textarea, .formee select { border-color: #093B64 #000 #307194; }
+.formee .formee-txt, .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee input[type="number"], .formee input[type="date"], ..formee input[type="email"], .formee textarea, .formee select { border-color: #093B64 #000 #307194; }
 
-.formee .formee-txt:hover, .formee input[type="text"]:hover, .formee input[type="password"]:hover, .formee input[type="file"]:hover, .formee input[type="number"]:hover, .formee input[type="date"]:hover, .formee textarea:hover, .formee select:hover {
+.formee .formee-txt:hover, .formee input[type="text"]:hover, .formee input[type="password"]:hover, .formee input[type="file"]:hover, .formee input[type="number"]:hover, .formee input[type="date"]:hover, .formee input[type="email"]:hover, .formee textarea:hover, .formee select:hover {
 	border-color: #000;
 	background: #418EB8;
 	color: #FFFFFF;
@@ -295,3 +296,6 @@ td.acao div.remover {
 	border: 1px solid green;
 }
 
+#botoes {
+	border: 1px solid red;
+}

@@ -100,6 +100,7 @@ $(function() {
                  <li><a href='http://localhost:8080/SGV/Controle?tela=principal&comando=TelaOportunidades'><span>Oportunidade</span></a></li>
                  <li><a href='http://localhost:8080/SGV/Controle?tela=principal&comando=TelaQuestoes'><span>Questões</span></a></li>
                  <li><a href="http://localhost:8080/SGV/Controle?tela=principal&comando=TelaRequisitos"><span>Requisitos</span></a></li>
+                 <li><a href="http://localhost:8080/SGV/Controle?tela=principal&comando=TelaUsuario"><span>Usuários</span></a></li>
                </ul>
             </li>
             <li><a href="aprovar-candidato.jsp"><span>Administrar Candidatos</span></a></li>
