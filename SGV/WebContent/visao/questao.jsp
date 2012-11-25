@@ -31,16 +31,16 @@
 	   listaQuestoes = new ArrayList();
 %>
 
-<form action="http://localhost:8080/SGV/Controle" class="formee" method="post">
+<form action="http://localhost:8080/SGV/Controle" class="formee" method="get">
 	<fieldset>
-		<legend>Banco de Quest√µes</legend>
+		<legend>Banco de Questıes</legend>
 			<div class="grid-1-12">
 				<label for="id" class="bold">ID <em class="formee-req">*</em></label>
 				<input type="text" name="id" id="id" class="no-margin" value='<%=q.getIdQuestao() %>'>
 			</div>
             <div class="grid-6-12">
                 <label for="enunciado" class="bold">Enunciado <em class="formee-req">*</em></label>
-                <input type="text" name="enunciado" id="enunciado" placeholder="Informe o enunciado da quest√£o" class="no-margin" value='<%=q.getEnunciado() %>'>
+                <input type="text" name="enunciado" id="enunciado" placeholder="Informe o enunciado da quest„o" class="no-margin" value='<%=q.getEnunciado() %>'>
             </div>
             <div class="grid-2-12">
 				<label for="tipo-questao" class="bold">Tipo <em class="formee-req">*</em></label>
@@ -108,7 +108,7 @@
 </form>
 <div class="grid-12-12">
     <table class="grid-12-12" id="table-questoes">
-        <caption class="grid-12-12"><h2>Quest√µes Cadastradas</h2></caption>
+        <caption class="grid-12-12"><h2>Questıes Cadastradas</h2></caption>
         <thead class="grid-12-12">
             <tr class="grid-12-12">
                 <th class="grid-1-12">ID</th>
@@ -137,4 +137,4 @@
     </table>
 </div>
 
-<%@ include file="footer.jsp" %>
+<%@ include file="footer.jsp" %>" %>

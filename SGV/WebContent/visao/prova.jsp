@@ -1,9 +1,9 @@
 <%@ include file="header.jsp" %>
-<form action="#" class="formee" method="post">
+<form action="#" class="formee" method="get">
 	<fieldset>
-		<legend>AvaliaÁ„o</legend>
+		<legend>Avalia√ß√£o</legend>
             <div class="grid-12-12">
-            	<label class="bold">1) Qual È a primeira quest„o cadastrada no Sistema de Gerenciamento de Vagas?</label>
+            	<label class="bold">1) Qual √© a primeira quest√£o cadastrada no Sistema de Gerenciamento de Vagas?</label>
                 <ul class="formee-list">
                     <li><input type="radio" value="A1" id="alt1A" name="resposta-questao1"><label for="alt1A">A</label></li>
                     <li><input type="radio" value="B1" id="alt1B" name="resposta-questao1"><label for="alt1B">B</label></li>
@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div class="grid-12-12">
-            	<label class="bold">2) Qual È a segunda quest„o cadastrada no Sistema de Gerenciamento de Vagas?</label>
+            	<label class="bold">2) Qual √© a segunda quest√£o cadastrada no Sistema de Gerenciamento de Vagas?</label>
                 <ul class="formee-list">
                     <li><input type="radio" value="A2" id="alt2A" name="resposta-questao2"><label for="alt2A">A</label></li>
                     <li><input type="radio" value="B2" id="alt2B" name="resposta-questao2"><label for="alt2B">B</label></li>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <div class="grid-12-12">
-            	<label class="bold">3) Qual È a terceira quest„o cadastrada no Sistema de Gerenciamento de Vagas?</label>
+            	<label class="bold">3) Qual √© a terceira quest√£o cadastrada no Sistema de Gerenciamento de Vagas?</label>
                 <ul class="formee-list">
                     <li><input type="radio" value="A3" id="alt3A" name="resposta-questao3"><label for="alt3A">A</label></li>
                     <li><input type="radio" value="B3" id="alt3B" name="resposta-questao3"><label for="alt3B">B</label></li>
@@ -30,7 +30,7 @@
                 </ul>
             </div>
             <div class="grid-12-12">
-            	<label class="bold">4) Qual È a quarta quest„o cadastrada no Sistema de Gerenciamento de Vagas?</label>
+            	<label class="bold">4) Qual √© a quarta quest√£o cadastrada no Sistema de Gerenciamento de Vagas?</label>
                 <ul class="formee-list">
                     <li><input type="radio" value="A4" id="alt4A" name="resposta-questao4"><label for="alt4A">A</label></li>
                     <li><input type="radio" value="B4" id="alt4B" name="resposta-questao4"><label for="alt4B">B</label></li>

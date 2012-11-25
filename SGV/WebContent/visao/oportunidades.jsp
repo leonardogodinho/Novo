@@ -32,7 +32,7 @@
    if(itens == null)
 	   itens = new ArrayList();
 %>
-<form action="http://localhost:8080/SGV/Controle" class="formee" method="post">
+<form action="http://localhost:8080/SGV/Controle" class="formee" method="get">
 	<fieldset id="dadosVaga">
 		<legend>Dados da Vaga</legend>
 			<div class="grid-1-12">
@@ -40,12 +40,12 @@
 				<input type="text" name="id" id="id" value="<%=o.getIdOportunidade() %>" class="no-margin">
 			</div>
             <div class="grid-6-12">
-                <label for="titulo" class="bold">T√≠tulo <em class="formee-req">*</em></label>
-                <input type="text" name="titulo" id="titulo" value="<%=o.getTitulo() %>" class="no-margin" placeholder="T√≠tulo da Vaga">
+                <label for="titulo" class="bold">TÌtulo <em class="formee-req">*</em></label>
+                <input type="text" name="titulo" id="titulo" value="<%=o.getTitulo() %>" class="no-margin" placeholder="TÌtulo da Vaga">
             </div>
             <div class="grid-5-12">
-                <label class="bold">√Å¬Årea de Atua√ß√£o</label>
-                <input  type="text" list="areaatuacao" name="areaAtuacao" placeholder="Digite ou Selecione a √Årea na lista" class="no-margin formee-list">
+                <label class="bold">¡Årea de AtuaÁ„o</label>
+                <input  type="text" list="areaatuacao" name="areaAtuacao" placeholder="Digite ou Selecione a ¡rea na lista" class="no-margin formee-list">
                 <datalist id="areaAtuacao">
  					<%
 //						String aux = "", aux1 = "", aux2 = "", aux3 = "", aux4 = "";
@@ -53,7 +53,7 @@
 //							aux = "selected";
 //						if(o.getAreaAtuacao().equals("Comercial"))
 //							aux1 = "selected";
-//						if(o.getAreaAtuacao().equals("Finan√ßas"))
+//						if(o.getAreaAtuacao().equals("FinanÁas"))
 //							aux2 = "selected";
 //						if(o.getAreaAtuacao().equals("TI"))
 //							aux3 = "selected";
@@ -61,7 +61,7 @@
 //							aux4 = "selected";
 //						out.write("<option value='Administrativo' id='area-opt1' " + aux + ">Administrativo</option>");
 //						out.write("<option value='Comercial' id='area-opt2' " + aux1 + ">Comercial</option>");
-//						out.write("<option value='Finan√ßas' id='area-opt3' " + aux2 + ">Finan√ßas</option>");
+//						out.write("<option value='FinanÁas' id='area-opt3' " + aux2 + ">FinanÁas</option>");
 //						out.write("<option value='TI' id='area-opt4' " + aux3 + ">TI</option>");
 //						out.write("<option value='Vendas' id='area-opt5' " + aux4 + ">Vendas</option>");
                 %>
@@ -69,36 +69,36 @@
                 </datalist>
 			</div>
             <div class="grid-3-12">
-                <label for="jornada" class="bold">Carga Hor√°ria <em class="formee-req">*</em></label>
+                <label for="jornada" class="bold">Carga Hor·ria <em class="formee-req">*</em></label>
                 <input type="number" class="no-margin" placeholder="0" id="cargaHoraria" name="cargaHoraria">
             </div>
             <div class="grid-3-12">
-            	<label for="salario" class="bold">Sal√°rio (R$)</label>
+            	<label for="salario" class="bold">Sal·rio (R$)</label>
                 <input type="number" name="salario" id="salario" value="<%=o.getSalario() %>">
             </div>
             <div class="grid-6-12">
-                <label class="bold">Benef√≠¬≠cios</label>
+                <label class="bold">BenefÌ≠cios</label>
                 <ul class="formee-list">
-                    <li><input type="checkbox" value="Plano de Sa√∫de" id="planoSaude" name="planoSaude"><label for="plano">Plano de Sa√∫de</label></li>
-                    <li><input type="checkbox" value="Ticket Refei√ß√£o" id="vr" name="vr"><label for="ticket">Ticket Refei√ß√£o</label></li>
-                    <li><input type="checkbox" value="Cesta B√°sica" id="cesta" name="cesta"><label for="cesta-basica">Cesta B√°sica</label></li>
-                    <li><input type="checkbox" value="Participa√ß√£o nos Lucros" id="pl" name="pl"><label for="pl">Participa√ß√£o nos Lucros</label></li>
-                    <li><input type="checkbox" value="Plano Odontol√≥gico" id="planoOdontologico" name="planoOdontologico"><label for="dentista">Plano Odontol√≥gico</label></li>
+                    <li><input type="checkbox" value="Plano de Sa˙de" id="planoSaude" name="planoSaude"><label for="plano">Plano de Sa˙de</label></li>
+                    <li><input type="checkbox" value="Ticket RefeiÁ„o" id="vr" name="vr"><label for="ticket">Ticket RefeiÁ„o</label></li>
+                    <li><input type="checkbox" value="Cesta B·sica" id="cesta" name="cesta"><label for="cesta-basica">Cesta B·sica</label></li>
+                    <li><input type="checkbox" value="ParticipaÁ„o nos Lucros" id="pl" name="pl"><label for="pl">ParticipaÁ„o nos Lucros</label></li>
+                    <li><input type="checkbox" value="Plano OdontolÛgico" id="planoOdontologico" name="planoOdontologico"><label for="dentista">Plano OdontolÛgico</label></li>
                     <li><input type="checkbox" value="vt" id="vt" name="vt"><label for="vt">Vale Transporte</label></li>
                 </ul>
             </div>
             <div class="grid-12-12">
-            	<label for="desc" class="bold">Descri√ß√£o</label>
+            	<label for="desc" class="bold">DescriÁ„o</label>
             	<textarea name="descricao" id="descricao" cols="20" rows="30" value="<%=o.getDescricao() %>" placeholder="Descreva e informe todos os detalhes da vaga" class="no-margin"></textarea>
             </div>        
             <div class="grid-12-12">
             	<table class="grid-12-12">
-            		<caption class="grid-12-12"><h2>Requisitos Dispon√≠¬≠veis</h2></caption>
+            		<caption class="grid-12-12"><h2>Requisitos DisponÌ≠veis</h2></caption>
             		<thead class="grid-12-12">
             			<tr class="grid-12-12">
             				<th class="grid-4-12">Requisito</th>
             				<th class="grid-4-12">Quantidade</th>
-            				<th class="grid-4-12">A√ß√µes</th>
+            				<th class="grid-4-12">AÁıes</th>
             			</tr>
 					</thead>
                     <tbody class="grid-12-12">
@@ -157,11 +157,11 @@
             <input type="text" name="id" value="<%=o.getIdOportunidade() %>" class="no-margin">
 		</div>
         <div class="grid-6-12">
-        	<label for="titulo" class="bold">T√≠tulo <em class="formee-req">*</em></label>
-            <input type="text" name="titulo" value="<%=o.getTitulo() %>" class="no-margin" placeholder="T√≠tulo da Vaga" >
+        	<label for="titulo" class="bold">TÌtulo <em class="formee-req">*</em></label>
+            <input type="text" name="titulo" value="<%=o.getTitulo() %>" class="no-margin" placeholder="TÌtulo da Vaga" >
 		</div>
 		<div class="grid-5-12">
-			<label class="bold">√Årea de Atua√ß√£o</label>
+			<label class="bold">¡rea de AtuaÁ„o</label>
             <select name="areaAtuacao">
                 <%
 						String aux = "", aux1 = "", aux2 = "", aux3 = "", aux4 = "";
@@ -169,7 +169,7 @@
 							aux = "selected";
 						if(o.getAreaAtuacao().equals("Comercial"))
 							aux1 = "selected";
-						if(o.getAreaAtuacao().equals("Finan√ßas"))
+						if(o.getAreaAtuacao().equals("FinanÁas"))
 							aux2 = "selected";
 						if(o.getAreaAtuacao().equals("TI"))
 							aux3 = "selected";
@@ -177,14 +177,14 @@
 							aux4 = "selected";
 						out.write("<option value='Administrativo' id='area-opt1' " + aux + ">Administrativo</option>");
 						out.write("<option value='Comercial' id='area-opt2' " + aux1 + ">Comercial</option>");
-						out.write("<option value='Finan√ßas' id='area-opt3' " + aux2 + ">Finan√ßas</option>");
+						out.write("<option value='FinanÁas' id='area-opt3' " + aux2 + ">FinanÁas</option>");
 						out.write("<option value='TI' id='area-opt4' " + aux3 + ">TI</option>");
 						out.write("<option value='Vendas' id='area-opt5' " + aux4 + ">Vendas</option>");
                 %>
                 </select>	 
         </div>
         <div class="grid-3-12">
-            <label for="jornada" class="bold">Carga Hor√°ria <em class="formee-req">*</em></label> 
+            <label for="jornada" class="bold">Carga Hor·ria <em class="formee-req">*</em></label> 
             <input type="number">
             <!--  
             <select name="cargaHoraria">
@@ -194,20 +194,20 @@
             -->
         </div>                	
         <div class="grid-3-12">
-	        <label for="salario" class="bold">Sal√°rio (R$)</label>
+	        <label for="salario" class="bold">Sal·rio (R$)</label>
             <input type="text" name="salario" value="<%=o.getSalario() %>"  />
         </div>
         <div class="grid-6-12">
-        	<label class="bold">Benef√≠¬≠cios</label>
+        	<label class="bold">BenefÌ≠cios</label>
             <input type="checkbox" name="vt" value="vt">VT
-            <input type="checkbox" name="planoSaude" value="planoSaude">Plano de Sa√∫de
+            <input type="checkbox" name="planoSaude" value="planoSaude">Plano de Sa˙de
             <input type="checkbox" name="vr" value="vr">VR<br>
-            <input type="checkbox" name="cesta" value="cesta">Cesta B√°sica
+            <input type="checkbox" name="cesta" value="cesta">Cesta B·sica
             <input type="checkbox" name="pl" value="pl">PL
-            <input type="checkbox" name="planoOdonto" value="planoOdonto">Plano Odontol√≥gico		
+            <input type="checkbox" name="planoOdonto" value="planoOdonto">Plano OdontolÛgico		
         </div>
 		<div class="grid-12-12">
-            <label for="desc" class="bold">Descri√ß√£o</label>
+            <label for="desc" class="bold">DescriÁ„o</label>
             <textarea rows="10" cols="60" name="descricao" value="<%=o.getDescricao() %>" ></textarea>
         </div>	
 		<div class="grid-12-12">
@@ -265,6 +265,10 @@
 		</div>
 	<input type="hidden" name="tela" value="TelaOportunidade" />
 	</form>
+
+</body>
+</html>
+<%@ include file="footer.jsp"  %>>
 
 </body>
 </html>

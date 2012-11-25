@@ -87,14 +87,13 @@
 		
             </div>
 			
-		<br>
-		<div id="botoes">
-			<input type="submit" name="comando" value="Cadastrar" />
-			<input type="submit" name="comando" value="Alterar"/>
-			<input type="submit" name="comando" value="Excluir"/>
-			<input type="submit" name="comando" value="Consultar"/>
-			<input type=hidden name="tela" value="TelaUsuario">				
-		</div>
+		<div class="grid-12-12 no-margin">
+				<div class="grid-3-12"><input type="submit" name="comando" value="Cadastrar" /></div>
+				<div class="grid-3-12"><input type="submit" name="comando" value="Alterar"/></div>
+				<div class="grid-3-12"><input type="submit" name="comando" value="Excluir"/></div>
+				<div class="grid-3-12"><input type="submit" name="comando" value="Consultar"/></div>
+			</div>
+            <input type=hidden name="tela" value="TelaUsuario">	
         </fieldset>
 	</form>
     <script type="text/javascript">

@@ -28,7 +28,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="http://localhost:8080/SGV/Controle" method="post">
+	<form action="http://localhost:8080/SGV/Controle" method="GET">
 		<fieldset>
 			<legend>Dados do usuário</legend>
 			<br>

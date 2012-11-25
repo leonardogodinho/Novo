@@ -57,10 +57,10 @@
     <div class="col_16 col align_center">
     	<h1 class="fontface">Sistema de Gerenciamento de Vagas</h1>
         
-        <h2 class="no-border">Faï¿½a o Login abaixo para acessar a ï¿½rea restrita</h2>
+        <h2 class="no-border">Faça o Login abaixo para acessar a área restrita</h2>
         
         <section id="login">
-        	<form action="http://localhost:8080/SGV/Controle" method="post" class="formee">
+        	<form action="http://localhost:8080/SGV/Controle" method="get" class="formee">
             	<fieldset>
                     <div class="grid-6-12">
                         <input type="hidden" name="tela" value="Login" />
@@ -78,8 +78,8 @@
 
 <footer class="row">
 
-	<div class="col_16 col box_shadow"><span class="align_left left">S.G.V. - Versï¿½o 1.0</span> <span class="right">Todos os direitos reservados</span></div>
+	<div class="col_16 col box_shadow"><span class="align_left left">S.G.V. - Versão 1.0</span> <span class="right">Todos os direitos reservados</span></div>
 
 </footer>
 </body>
-</html>
+</html></html>
