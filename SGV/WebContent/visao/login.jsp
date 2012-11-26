@@ -60,13 +60,14 @@
         <h2 class="no-border">Faça o Login abaixo para acessar a área restrita</h2>
         
         <section id="login">
-        	<form action="http://localhost:8080/SGV/Controle" method="get" class="formee">
+        	<form action="http://localhost:8080/SGV/Controle" method="GET" class="formee">
             	<fieldset>
                     <div class="grid-6-12">
                         <input type="hidden" name="tela" value="Login" />
                     	<input type="text" placeholder="Login" id="login" name="usuario" class="formee-req" required autofocus>
                         <input type="password" placeholder="Senha" id="passw" name="senha" required>
-                        <input type="submit" name="comando" value="Entrar" class="grid-12-12">                        
+                        <input type="submit" name="comando" value="Entrar" class="grid-12-12">
+                        <a href="" class="right">Esqueci minha senha</a>
                     </div>
                 </fieldset>
             </form>
@@ -82,4 +83,4 @@
 
 </footer>
 </body>
-</html></html>
+</html>

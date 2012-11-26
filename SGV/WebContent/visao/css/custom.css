@@ -13,11 +13,18 @@ h2 { font-weight: normal; }
 
 a, a:hover { text-decoration: none; }
 
-header .logo {
-	position: relative;
-	botton: 58px;
+#user-info { 
+	width: 250px;
 }
+
+header .logo {
+    bottom: 55px;
+    left: 27%;
+    position: relative;
+}
+
 #passw { margin: 22px 50%; }
+
 section#login { 
 	margin: 150px;
 }
@@ -212,9 +219,9 @@ nav .has-sub .has-sub ul li a:hover {
   transition: background 1s linear, border-color 1s, box-shadow 3s;
 }
 
-.formee fieldset { 
-	margin: 10em 0 4em;
-	border: 1px solid #093B64;
+.formee fieldset {
+    border: 1px solid #093B64;
+    margin: 3em 1% 4em;
 }
 
 .formee legend {font-family: spin_cycle_3d_otregular;}
@@ -259,7 +266,7 @@ td:last-child { margin-left: 14.5%; }
 
 td p { text-align: center; }
 
-td.acao { }
+td.acao { margin-left: 5%; }
 
 td.acao div {
 	float: left;

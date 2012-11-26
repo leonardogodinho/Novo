@@ -1,7 +1,7 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="modelo.*,java.util.*" %>
+<%@page import="modelo.*,java.util.*,dao.*" %>
     
 <!DOCTYPE HTML>
 <html>
@@ -97,13 +97,15 @@ $(function() {
         <ul>
            <li class='has-sub '><a href='#'><span>Cadastrar</span></a>
               <ul>
+              	 <li><a href='http://localhost:8080/SGV/Controle?tela=principal&comando=TelaUsuarios'><span>Usuário</span></a></li>
+              	 <li><a href='http://localhost:8080/SGV/Controle?tela=principal&comando=TelaColaboradores'><span>Colaborador</span></a></li>
+                 
                  <li><a href='http://localhost:8080/SGV/Controle?tela=principal&comando=TelaOportunidades'><span>Oportunidade</span></a></li>
                  <li><a href='http://localhost:8080/SGV/Controle?tela=principal&comando=TelaQuestoes'><span>Questões</span></a></li>
                  <li><a href="http://localhost:8080/SGV/Controle?tela=principal&comando=TelaRequisitos"><span>Requisitos</span></a></li>
-                 <li><a href="http://localhost:8080/SGV/Controle?tela=principal&comando=TelaUsuario"><span>Usuários</span></a></li>
                </ul>
             </li>
-            <li><a href="aprovar-candidato.jsp"><span>Administrar Candidatos</span></a></li>
+            <li><a href="http://localhost:8080/SGV/Controle?tela=principal&comando=TelaAprovarCandidato"><span>Administrar candidatos</span></a></li>         
             <li><a href="#"><span>Relatórios</span></a></li>
             <li><a href='http://localhost:8080/SGV/Controle?tela=principal&comando=TelaListaOportunidade'><span>Em Aberto</span></a></li>
          </ul>
@@ -113,9 +115,12 @@ $(function() {
 	<header class="no-border col_16">
     
     	<div class="col_10">
-        
+        <div id="user-info">
+        	<p>Bem vindo <span class="bold">Nome do Usuário</span>!<br>
+            Seu nível de acesso é <span class="bold">nível de acesso</span>.</p>
+            <p class="left">Logout</p> 
         </div>
-    	
+        </div>    	
         <div class="logo float_right"><img src="<%=request.getContextPath() %>/visao/images/svg-logo300.png" alt="Sistema de Gerenciamento de Vagas"></div>
         
         <div class="clear"></div><!-- clear -->

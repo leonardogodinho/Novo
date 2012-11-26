@@ -11,7 +11,7 @@
    {
 	   u = new Usuario();
 	   u.setIdUsuario(0);
-	   u.setCpf(0);
+	   u.setCpf("");
 	   u.setNome("");
 	   u.setDepto("");
 	   u.setEmail("");
@@ -19,21 +19,21 @@
 	   u.setTipo("");
    }%>
 
-<form action="http://localhost:8080/SGV/Controle" method="post" class="formee" name="cadastroUsuario">
+<form action="http://localhost:8080/SGV/Controle" method="get" class="formee" name="cadastroUsuario" >
 		<fieldset>
 			<legend>Dados do usuário</legend>
 
 			<div class="grid-1-12">
 				<label for="id" class="bold" >ID <em class="formee-req">*</em></label>
-                <input type=text name="id" id="id" value="<%=u.getIdUsuario() %>" placeholder="Nº" pattern="[0-9]{5}" maxlength="5" >
+                <input type=text name="id" id="id" value="<%=u.getIdUsuario() %>" placeholder="Nº" maxlength="5" >
 			</div>
 			<div class="grid-2-12">
             	<label   for="cpf" class="bold">CPF <em class="formee-req">*</em></label>
-                <input type="text" name="cpf" id="cpf" value="<%=u.getCpf() %>" placeholder="00000000000" pattern="[0-9]{11}" onBlur="ValidarCPF(cadastroUsuario.cpf);" maxlength="11" title="Insira apenas Números">
+                <input type="text" name="cpf" id="cpf" value="<%=u.getCpf() %>" placeholder="00000000000" pattern="[0-9]{11}" onBlur="ValidarCPF(cadastroUsuario.cpf);" maxlength="11" title="Insira apenas Números" required="required">
             </div>
             <div class="grid-6-12">
                 <label   for="nome" class="bold">Nome <em class="formee-req">*</em></label>
-                <input type="text" id="nome" name="nome" value="<%=u.getNome() %>" placeholder="Nome completo do colaborador">
+                <input type="text" id="nome" name="nome" value="<%=u.getNome() %>" placeholder="Nome completo do colaborador" required="required">
             </div>
 			<div class="grid-3-12">
             	<label  class="bold">Departamento <em class="formee-req">*</em></label>			
@@ -61,11 +61,11 @@
 			
 			<div class="grid-4-12">
             	<label   for="email" class="bold">E-mail <em class="formee-req">*</em></label>
-                <input type="email" id="email" name="email" value="<%=u.getEmail() %>" placeholder="seu@email.com">
+                <input type="email" id="email" name="email" value="<%=u.getEmail() %>" placeholder="seu@email.com" required="required">
             </div>
 			<div class="grid-4-12">
             				<label  for="senha" class="bold">Senha de acesso <em class="formee-req">*</em></label>
-                            <input type="password" id="senha" name="senha" value="<%=u.getSenha() %>" placeholder="Senha de Acesso">
+                            <input type="password" id="senha" name="senha" value="<%=u.getSenha() %>" placeholder="Senha de Acesso" required="required">
             </div>
 			<div class="grid-4-12">
             			<label  class="bold">Tipo de usuário <em class="formee-req">*</em></label>
@@ -88,11 +88,13 @@
             </div>
 			
 		<div class="grid-12-12 no-margin">
-				<div class="grid-3-12"><input type="submit" name="comando" value="Cadastrar" /></div>
-				<div class="grid-3-12"><input type="submit" name="comando" value="Alterar"/></div>
-				<div class="grid-3-12"><input type="submit" name="comando" value="Excluir"/></div>
-				<div class="grid-3-12"><input type="submit" name="comando" value="Consultar"/></div>
-			</div>
+		<div>
+			<div class="grid-3-12 no-margin"><input type="submit" name="comando" value="Cadastrar" /></div>
+			<div class="grid-3-12 no-margin"><input type="submit" name="comando" value="Alterar"/></div>
+			<div class="grid-3-12 no-margin"><input type="submit" name="comando" value="Excluir"/></div>
+			<div class="grid-3-12 no-margin"><input type="submit" name="comando" value="Consultar"/></div>
+		</div>
+		</div>
             <input type=hidden name="tela" value="TelaUsuario">	
         </fieldset>
 	</form>
